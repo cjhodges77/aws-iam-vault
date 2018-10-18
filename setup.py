@@ -12,7 +12,7 @@ setuptools.setup(
                  "from Vault using IAM role credentials"),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/cjhodges/aws-iam-vault",
+    url="https://github.com/cjhodges77/aws-iam-vault",
     packages=['awsiamvault'],
     install_requires=[
         'boto3',
