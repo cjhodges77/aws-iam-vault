@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="awsiamvault",
-    version="0.0.1",
+    version="0.0.2",
     author="Chris Hodges",
     author_email="chris@humbershoe.co.uk",
     description=("A small helper for getting a secret"
