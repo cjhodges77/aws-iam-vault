@@ -7,7 +7,7 @@ setuptools.setup(
     name="awsiamvault",
     version="0.0.1",
     author="Chris Hodges",
-    author_email="cjhodges77@googlemail.com",
+    author_email="chris@humbershoe.co.uk",
     description=("A small helper for getting a secret"
                  "from Vault using IAM role credentials"),
     long_description=long_description,
