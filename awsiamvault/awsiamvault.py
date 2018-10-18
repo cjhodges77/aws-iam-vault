@@ -8,6 +8,9 @@ class BadCredentials(Exception):
 
 
 def _get_aws_credentials():
+    """
+        Return keys and token for the instances IAM role.
+    """
     session = boto3.Session()
     credentials = session.get_credentials()
     credentials = credentials.get_frozen_credentials()
@@ -22,6 +25,9 @@ def _get_aws_credentials():
 
 
 def _connect_to_vault(url, access_key, secret_key, token, region):
+    """
+        Return Vault client using supplied IAM credentials.
+    """
     vault_client = hvac.Client(url=url)
     vault_client.auth_aws_iam(access_key,
                               secret_key,
@@ -31,6 +37,9 @@ def _connect_to_vault(url, access_key, secret_key, token, region):
 
 
 def _read_vault(vault_client, path):
+    """
+        Return the secret at path.
+    """
     return vault_client.read(path)
 
 
