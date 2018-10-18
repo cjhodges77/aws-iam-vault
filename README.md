@@ -15,5 +15,6 @@ secret = read_secret(region, vault_url, path)
 ```
 Test:
 ```console
+pip install test/requirements-test.txt
 nosetests -v --with-cover --cover-erase --cover-tests --cover-package=awsiamvault
 ```
